@@ -1,0 +1,117 @@
+@media (max-width: 768px) {
+    .logoheader {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .menu {
+        flex-direction: column;
+        gap: 5px;
+      }
+    
+      .receita-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .receita-texto {
+        text-align: center;
+      }
+    
+      .footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .menufooter {
+        flex-direction: column;
+      }
+}
+@font-face {
+    font-family: 'Cal Sans';
+    src: url('/fonts/CalSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/*Estilos Centrais*/
+body{
+    background: #f8b2bf;
+}
+header{
+    background: #fbc6d0;
+    font-family: 'Cal Sans', sans-serif;
+    font-size: 32px;
+}
+/* Estilos do Cabeçalho */
+    .logoheader{
+        display: flex;              /* Torna o header um contêiner flexível */
+        justify-content: space-between;  /* Espaça a logo e o título para as extremidades */
+        align-items: center;        /* Alinha verticalmente no centro */
+}
+    .titulo{
+        text-align: center;
+        color: #ff3043;
+        flex-grow: 1;
+}
+    .menu{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        color: #ff3043;
+        text-decoration: none;
+        padding-bottom: 10px;
+        gap: 10px; /* Espaçamento entre os itens do menu */
+}
+/* Estilos do Centro */
+    .receita-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+        flex-wrap: wrap; /* Faz se adaptar para telas menores */
+}
+
+    .receita-img {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+}
+
+    .receita-texto {
+        flex: 1;
+        min-width: 250px;
+}
+
+
+
+/* Estilos do Rodapé */
+.footer{
+    display: flex;
+    background: #fbc6d0;
+    font-family: 'Cal Sans', sans-serif;
+    font-size: 12px;
+    align-items: center;
+}
+.menufooter{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    list-style: none;
+    color: #ff3043;
+    text-decoration: none;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+.menu a, .menufooter a {
+    color: #ff3043;
+    text-decoration: none;
+  }
+  
+  .menu a:hover, .menufooter a:hover {
+    text-decoration: underline;
+  }
